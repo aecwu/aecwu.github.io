@@ -1,0 +1,283 @@
+/* TO GET AN IDEA OF THE CSS YOU WILL LIKELY BE USING, SEE THE LISTS BELOW. */
+
+        /* 
+        
+        Spacing 
+
+            - padding (shorthand and/or specific properties like padding-bottom, etc.)
+
+            - margin, (shorthand and/or specific properties like margin-top, etc.)
+
+            - letter-spacing, word-spacing, line-height
+
+            - width, max-width, min-width
+            - height, max-height, min-height
+
+        Typography 
+
+            - font-family, font-size, font-style, font-weight
+
+            - text-decoration, text-align
+
+            - color
+
+            - text-shadow, text-transform
+
+        Box, Layout and Border 
+
+            - border (shorthand and/or specific properties like border-top, border-bottom-radius, border-width, etc.)
+
+            - box-shadow
+
+            - display, float, align-items, align-content
+
+            - grid-template-columns, grid-column-gap
+
+            - transform
+
+        Other
+
+            - :nth()-child (to target specific child elements)
+
+            - :focus, :hover, :active (to target link states)
+
+            - @font-face or @import (to import typefaces)
+
+        */
+
+
+/* ------ START WRITING YOUR CODE BELOW ------ */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size:16px;
+	color:  #566573 ;
+	background-color:  #fcf3cf ;
+	font-family: Verdana, Sans-Serif;
+}
+
+body {
+    margin: 1.5rem auto;
+    width:90%;
+    min-width:56.25rem;
+}
+
+main {
+    overflow:auto;
+    min-width:45rem;
+}
+
+article{
+	text-align: justify;
+	float: left;
+}
+
+aside{
+	max-width: auto;
+	height: auto;
+
+}
+aside>img{
+	max-height: 10rem;
+	height: auto;
+	float:left;
+	padding: .125rem;
+	margin-left: 2rem;
+	border-style: solid;
+	border-color: #566573;
+	border-width: .325rem;
+	border-padding: .125rem;
+	background-color:#566573;
+	margin-right: .5rem;
+	
+}
+
+aside>h3{
+		margin-top:8rem;
+		text-decoration: underline;
+}
+
+aside>p{
+	margin-bottom: 3rem;
+}
+
+aside>section>a{
+		text-decoration: none;
+		font-size: .6rem;
+		text-align:right;
+}
+
+.dots{
+	float: right;
+}
+
+.dots>a{
+	text-decoration:none;
+	font-size: .3rem;
+}
+
+.dots>a:focus, .dots>a:hover{
+	font-size: 1rem;
+}
+
+
+section {
+    float: left;
+    min-width: 22.5rem;
+}
+
+.main-section{
+	border-style: groove;
+
+}
+
+.subsection{
+	display: inline-block;
+	border: solid;
+	height: 18rem;
+	min-width: 30rem;
+	width: 100%;
+	margin-bottom: 3rem;
+}
+
+.left{
+	max-width: 8rem;
+	height:10rem;
+	margin: 2rem;
+	min-width: 0;
+}
+
+.middle{
+	max-width: 8rem;
+	height:10rem;
+	margin: 2rem;
+	min-width: 0;
+}
+
+.right{
+	max-width: 8rem;
+	height:10rem;
+	margin: 2rem;
+	min-width: 0;
+}
+
+.article-image{
+	float:right;
+	padding: .125rem;
+	margin-left: 2rem;
+	border-style: solid;
+	border-color: #566573;
+	border-width: .325rem;
+	border-padding: .125rem;
+	background-color:#566573;
+
+}
+
+.article-image>figcaption {
+    margin:.375rem;
+	text-align: left;
+	color: #fcf3cf;	
+}
+
+.left>figure, .middle>figure, .right>figure{
+	display: inline-block;
+	width: 8rem;	
+}
+
+.left>figure>figcaption, .middle>figure>figcaption, .right>figure>figcaption{
+	font-size: .85rem;
+	text-align: left;
+}
+
+.right>figcaption{
+	float:right;
+}
+
+.leftImg{
+	max-width: 8rem;
+	height:10rem;
+}
+
+.middleImg{
+	max-width: 8rem;
+	height:10rem;
+}
+
+.rightImg{
+	max-width: 8rem;
+	height:10rem;
+}
+
+nav {
+    float: left;
+    width:11.25rem;
+	display: grid;
+	text-decoration: none;
+	line-height: 2;
+	text-align: center;
+	font-size: 1.125rem;
+	margin-top: 5rem;
+	margin-bottom: 1.5rem;
+	margin-right: 1.5rem;
+	
+}
+
+nav a{
+	border-style: solid;
+	border-color: #566573;
+	text-decoration: none;
+	color: #a81e00;
+	margin-bottom: .5rem;
+}
+
+nav a:focus, nav a:hover{
+	border-color:#a81e00;
+	border-style: double;
+}
+
+footer {
+    clear: both;
+    margin-top:1.5rem;
+	font-size: .6rem;
+	float: right;
+
+}
+
+section, aside, nav, footer {
+	padding: .5rem;
+}
+
+
+
+h1{
+	color: #34495e ;
+	font-family: Garamond, Serif;
+	text-align: center;
+	font-size: 3rem;
+	text-shadow: .125rem .125rem grey;
+}
+
+.highlight{
+	color:  #a81e00 ;
+}
+
+h2{
+	padding-left: .6rem;
+	maring-bottom: 0;
+}
+
+h2, h3{
+	font-family: Trebuchet MS, Sans-Serif;
+}
+
+.rightTime {
+	float: right;
+}
+
+
+
+.button: {
+	float:right;
+}
