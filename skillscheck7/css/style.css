@@ -52,65 +52,92 @@
 }
 
 html {
-    font-size:16px;
-	color:  #566573 ;
-	background-color:  #fcf3cf ;
+    font-size:14px;
+	border-width: thin;
 	font-family: Verdana, Sans-Serif;
+	border-width: thin;
+	border-style: solid;
+	margin: 2rem;
 }
 
 body {
     margin: 1.5rem auto;
     width:90%;
-    min-width:56.25rem;
+
 }
 
-main {
-    overflow:auto;
-    min-width:45rem;
+nav {
+    float: top;
+    width:auto;
+	display: flex;
+	text-decoration: none;
+	line-height: 2;
+	text-align: center;
+	font-size: 1.125rem;
+	margin-top: 2rem;
+	margin-bottom: 1.5rem;
+	margin-right: 1.5rem;
+	border-top: solid;
+	border-bottom: solid;
+	border-width: thin;
+
+}
+
+nav a{
+	margin-left: 1rem;
+	text-decoration: none;
+	color: #455F8B;
+	margin-bottom: .5rem;
+	padding: .8rem;
+}
+
+.blog{
+	text-decoration:line-through;
+}
+nav a:focus, nav a:hover{
+	font-weight: bold;
 }
 
 article{
-	text-align: justify;
+	margin:1rem;
+}
+
+.article-image{
 	float: left;
+	margin-left: 0rem;
+	margin-right: 1rem;
+	margin-bottom: 1rem;
+	margin-top: 0rem;
+}
+.article-image>img{
+	max-width: 17rem;
 }
 
 aside{
-	max-width: auto;
-	height: auto;
-
+	width: 20%;
+	padding-left: 1.5rem;
+    margin-left: 1rem;
+    float: right;
+    border-left: solid;
+	border-width: thin;
+	font-size: .5rem;
 }
 aside>img{
-	max-height: 10rem;
-	height: auto;
-	float:left;
-	padding: .125rem;
-	margin-left: 2rem;
-	border-style: solid;
-	border-color: #566573;
-	border-width: .325rem;
-	border-padding: .125rem;
-	background-color:#566573;
-	margin-right: .5rem;
-	
+	width: 100%;
+
 }
 
 aside>h3{
-		margin-top:8rem;
-		text-decoration: underline;
+	margin-top: 1rem;
+	font-size: .8rem;
 }
 
-aside>p{
-	margin-bottom: 3rem;
-}
-
-aside>section>a{
-		text-decoration: none;
-		font-size: .6rem;
-		text-align:right;
-}
 
 .dots{
-	float: right;
+
+	padding-bottom: .5rem;
+	border-bottom: solid;
+	border-width: thin;
 }
 
 .dots>a{
@@ -122,130 +149,53 @@ aside>section>a{
 	font-size: 1rem;
 }
 
-
-section {
-    float: left;
-    min-width: 22.5rem;
-}
-
-.main-section{
-	border-style: groove;
-
-}
-
 .subsection{
-	display: inline-block;
-	border: solid;
-	height: 18rem;
-	min-width: 30rem;
-	width: 100%;
-	margin-bottom: 3rem;
-}
-
-.left{
-	max-width: 8rem;
-	height:10rem;
-	margin: 2rem;
-	min-width: 0;
-}
-
-.middle{
-	max-width: 8rem;
-	height:10rem;
-	margin: 2rem;
-	min-width: 0;
-}
-
-.right{
-	max-width: 8rem;
-	height:10rem;
-	margin: 2rem;
-	min-width: 0;
-}
-
-.article-image{
-	float:right;
-	padding: .125rem;
-	margin-left: 2rem;
-	border-style: solid;
-	border-color: #566573;
-	border-width: .325rem;
-	border-padding: .125rem;
-	background-color:#566573;
+	display: flex;
+	width: auto;
+	margin-bottom: 1rem;
+	padding: 0rem;
 
 }
 
-.article-image>figcaption {
-    margin:.375rem;
-	text-align: left;
-	color: #fcf3cf;	
+.subsection>figure{
+	background-color: #EEEEDE;
+	width: auto;
+	height: auto;
 }
 
-.left>figure, .middle>figure, .right>figure{
-	display: inline-block;
-	width: 8rem;	
-}
-
-.left>figure>figcaption, .middle>figure>figcaption, .right>figure>figcaption{
-	font-size: .85rem;
-	text-align: left;
-}
-
-.right>figcaption{
-	float:right;
-}
-
-.leftImg{
-	max-width: 8rem;
-	height:10rem;
-}
-
-.middleImg{
-	max-width: 8rem;
-	height:10rem;
-}
-
-.rightImg{
-	max-width: 8rem;
-	height:10rem;
-}
-
-nav {
-    float: left;
-    width:11.25rem;
-	display: grid;
-	text-decoration: none;
-	line-height: 2;
-	text-align: center;
-	font-size: 1.125rem;
-	margin-top: 5rem;
-	margin-bottom: 1.5rem;
-	margin-right: 1.5rem;
+.subsection>figure>img{
+	max-width: 100%;
+	height: auto;
+	margin: 0rem;
 	
 }
 
-nav a{
-	border-style: solid;
-	border-color: #566573;
-	text-decoration: none;
-	color: #a81e00;
-	margin-bottom: .5rem;
+.subsection>figure>figcaption{
+	font-size: .6rem;
+	margin-bottom: 0rem;
 }
 
-nav a:focus, nav a:hover{
-	border-color:#a81e00;
-	border-style: double;
+.button{
+	border-color: #35476C;
+	background-color: #35476C;
+	color: #EEEEDE;
+	border-radius: 8%;
+	padding: .25rem;
+	margin: 3rem;
+	margin-bottom: 5rem;
+	font-family: Garamond, Serif;
+	font-decoration: bold;
 }
 
 footer {
     clear: both;
     margin-top:1.5rem;
 	font-size: .6rem;
-	float: right;
+
 
 }
 
-section, aside, nav, footer {
+footer {
 	padding: .5rem;
 }
 
@@ -264,23 +214,25 @@ h1{
 }
 
 h2{
-	padding-left: .6rem;
-	maring-bottom: 0;
+	margin:1rem;
 }
 
 h2, h3{
 	font-family: Trebuchet MS, Sans-Serif;
 }
 
-.rightTime {
+
+.leftCopy{
+	float: left;
+}
+
+.rightCopy{
 	float: right;
 }
-
-
-
-.button: {
-	float:right;
+.cc{
+	color: gray;
 }
+
 
 .final{
 	font-size: .8rem;
